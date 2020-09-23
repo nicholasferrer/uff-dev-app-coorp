@@ -12,10 +12,13 @@
 	String svalorB = request.getParameter("valorB");
 	String opcao = request.getParameter("opcao");
 	String resultado = request.getAttribute("resultado").toString();
+	String contador = request.getAttribute("contador").toString();
 %>
 
 Valor A: <% out.print(svalorA); %> Operação: <% out.print(opcao); %> Valor B: <% out.print(svalorB); %>
 <br>
 Resultado: <% out.print(resultado); %>
+<br>
+Número de vezes acessado: <% out.print(contador); %>
 </body>
 </html>
